@@ -1,0 +1,88 @@
+@import '../../variables';
+@import '../../mixins';
+
+
+.footer {
+      .copyright__text {
+        font-size: 16px;
+        line-height: 21px;
+        color: #272727;
+    }
+
+    &__list {
+        .list__link {
+            color: $clr-light;
+            line-height: 1;
+        }
+    }
+
+    .footer-content {
+        padding-block: 106px 84px;
+        border-block:2px solid #6E6E6E ;
+        @include mq(lg){
+            padding-block: 50px;
+         }
+    }
+    .copyright-section {
+        padding-block:23px 41px;
+        @include mq(lg){
+            padding-block: 20px;
+         }
+    }
+    &__title {
+        line-height: 40px;
+        margin-bottom: 30px;
+        @include mq(lg){
+            margin-bottom: 0px;
+            font-size: 26px;
+            line-height: 80px;
+         }
+    }
+    .list--social {
+        svg {
+            fill: $clr-dark;
+            width: 1rem;
+            height: 1rem;
+        }
+        .list__item {
+            background: $clr-light;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+            &:hover,
+            &:focus {
+                background: $clr-accent;
+            }
+        }        
+    }
+    .list--hover {
+        .list__link {
+            position: relative;
+            transition: padding-left .3s ease-out;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 22px;
+                height: 1px;
+                background: $clr-accent;
+                left: 0;
+                top: 56%;
+                opacity: 0;
+                -webkit-transition: opactiy .1s ease-out;
+                transition: opactiy .1s ease-out;
+            }
+            &:hover,
+            &:focus {
+                padding-left: 30px;
+            }
+            &:hover::before,
+            &:focus::before {
+                opacity: 1;
+            }
+        }
+    }
+}
