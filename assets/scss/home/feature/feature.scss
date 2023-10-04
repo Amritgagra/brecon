@@ -1,0 +1,30 @@
+@import '../../variables';
+@import '../../mixins';
+.feature {
+    padding-block:160px;
+    .nav-pills {
+        max-width: 760px;
+        .nav-link {
+            background: transparent;
+            font-size: 35px !important;
+            line-height: 47px;
+            font-family: 'Berthold-Akzidenz-Grotesk-Medium';
+            color: $clr-white;
+            padding-inline:0 !important;
+            border-bottom: 1px solid $clr-accent-light;
+            border-radius: 0;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            display: flex;
+
+            &:last-child {
+                border: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            &.active {
+                color: $clr-accent-light;
+            }
+        }
+    }
+}

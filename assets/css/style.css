@@ -99,9 +99,24 @@ a, button {
   border: 1px solid #B3C8E6 !important;
 }
 
-.btn__outline-light {
+.btn__outline-white {
   border: 1px solid #fff;
   color: #fff;
+  background: transparent;
+  border-radius: 8px;
+  padding: 4px 25px;
+  font-weight: 500 !important;
+  min-width: 188px;
+}
+.btn__outline-white:hover, .btn__outline-white:focus {
+  background: #B3C8E6 !important;
+  color: #002F5F !important;
+  border: 1px solid #B3C8E6 !important;
+}
+
+.btn__outline-light {
+  border: 1px solid #B3C8E6;
+  color: #B3C8E6;
   background: transparent;
   border-radius: 8px;
   padding: 4px 25px;
@@ -192,16 +207,12 @@ ul {
   border-block: 1px solid #707070;
 }
 
-.bg__dark {
-  background: #161616;
-}
-
 .bg__light {
   background: #F2F2F2;
 }
 
 .bg__accent {
-  background: #21578A;
+  background: #002F5F;
 }
 
 .text__accent {

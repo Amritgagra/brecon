@@ -68,14 +68,11 @@ ul {
     border-block:1px solid #707070 ;
 }
 
-.bg__dark {
-    background: $clr-dark;
-}
 .bg__light {
     background: $clr-light;
 }
 .bg__accent {
-    background: $clr-accent;
+    background: $clr-accent-dark;
 }
 .text__accent {
     color: $clr-accent !important;
