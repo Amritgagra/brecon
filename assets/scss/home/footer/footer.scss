@@ -15,6 +15,10 @@
      }
 
     &__list {
+        .list__item {
+            font-size: 18px;
+            line-height: 28px;
+        }
         .list__link {
             text-transform: capitalize;
             color: $clr-dark;

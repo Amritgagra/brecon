@@ -10,6 +10,10 @@
   font-size: 18px;
   line-height: 28px;
 }
+.footer__list .list__item {
+  font-size: 18px;
+  line-height: 28px;
+}
 .footer__list .list__link {
   text-transform: capitalize;
   color: #272727;

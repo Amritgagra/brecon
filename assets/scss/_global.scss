@@ -206,7 +206,7 @@ ul {
 .know__content {
     padding-left: 144px;
     @include mq(lg) {
-        padding-left: 50px;
+        padding-left: 0px;
     }
 }
 
@@ -221,13 +221,19 @@ ul {
     height: 100%;
     h3 {
         white-space: nowrap;
+        @include mq(xxxl) {
+            white-space: wrap;
+        }
     }
 }
 
 .solution {
     padding-block:120px 100px;
     &__content {
-        padding-left: 50px;
+        padding-left: 144px;
+        @include mq(lg) {
+            padding-left: 0px;
+        }
     }
 }
 
@@ -235,5 +241,8 @@ ul {
     padding-block:170px;
 &__content {
     padding-left: 50px;
+    @include mq(lg) {
+        padding-left: 0px;
+    }
 }
 }

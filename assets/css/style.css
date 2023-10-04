@@ -28,15 +28,14 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 26px;
-    line-height: 32px;
-    margin-bottom: 25px;
-    max-width: 75%;
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 576px) {
   h1 {
-    max-width: 100%;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -49,15 +48,14 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 26px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    max-width: 50%;
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 576px) {
   h2 {
-    max-width: 100%;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -82,6 +80,12 @@ a, button {
 .section__title {
   font-size: 35px;
   line-height: 45px;
+}
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .btn__outline-accent {
@@ -348,7 +352,7 @@ ul {
 }
 @media screen and (max-width: 992px) {
   .know__content {
-    padding-left: 50px;
+    padding-left: 0px;
   }
 }
 
@@ -366,12 +370,22 @@ ul {
 .card h3 {
   white-space: nowrap;
 }
+@media screen and (max-width: 1800px) {
+  .card h3 {
+    white-space: wrap;
+  }
+}
 
 .solution {
   padding-block: 120px 100px;
 }
 .solution__content {
-  padding-left: 50px;
+  padding-left: 144px;
+}
+@media screen and (max-width: 992px) {
+  .solution__content {
+    padding-left: 0px;
+  }
 }
 
 .application {
@@ -379,4 +393,9 @@ ul {
 }
 .application__content {
   padding-left: 50px;
+}
+@media screen and (max-width: 992px) {
+  .application__content {
+    padding-left: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
