@@ -2,7 +2,9 @@
 @import './mixins';
 @font-face {
     font-family: 'Berthold-Akzidenz-Grotesk-Medium';
-    src: url('font/Berthold-Akzidenz-Grotesk-Medium.woff2') format('woff2');
+    src: 
+    url('font/Berthold-Akzidenz-Grotesk-Medium.woff2'),
+    url('font/Berthold-Akzidenz-Grotesk-Medium.otf');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -10,7 +12,7 @@
 
 @font-face {
     font-family: 'Arial';
-    src: url('font/Arial.woff2') format('woff2');
+    src: url('font/Arial.woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;

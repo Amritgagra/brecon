@@ -17,7 +17,7 @@ ul {
 }
 
 .block-margin{
-   margin-block: 200px;
+   margin-block: 100px;
    @include mq(lg){
        margin-block: 100px;
     }

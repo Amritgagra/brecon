@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Berthold-Akzidenz-Grotesk-Medium";
-  src: url("font/Berthold-Akzidenz-Grotesk-Medium.woff2") format("woff2");
+  src: url("font/Berthold-Akzidenz-Grotesk-Medium.woff2"), url("font/Berthold-Akzidenz-Grotesk-Medium.otf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Arial";
-  src: url("font/Arial.woff2") format("woff2");
+  src: url("font/Arial.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -91,7 +91,7 @@ a, button {
   border-radius: 8px;
   padding: 4px 25px !important;
   font-weight: 500 !important;
-  min-width: 188px;
+  min-width: 169px;
 }
 .btn__outline-accent:hover, .btn__outline-accent:focus {
   background: #B3C8E6 !important;
@@ -129,7 +129,7 @@ ul {
 }
 
 .block-margin {
-  margin-block: 200px;
+  margin-block: 100px;
 }
 @media screen and (max-width: 992px) {
   .block-margin {
