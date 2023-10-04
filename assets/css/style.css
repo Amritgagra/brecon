@@ -324,4 +324,26 @@ ul {
 
 .phone-icon:hover svg path, .phone-icon:focus svg path {
   fill: #E3B838;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 992px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bg__gradient {
+  background: linear-gradient(158deg, #b3c8e6 0%, #e0e1dd 100%);
+}
+
+.know__content {
+  padding-left: 144px;
+}
+@media screen and (max-width: 992px) {
+  .know__content {
+    padding-left: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

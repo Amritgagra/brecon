@@ -188,3 +188,21 @@ ul {
         fill: #E3B838;
     }
 }
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2,1fr);
+    @include mq(lg) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bg__gradient {
+    background: linear-gradient(158deg, #b3c8e6 0%, #e0e1dd 100%);
+}
+
+.know__content {
+    padding-left: 144px;
+    @include mq(lg) {
+        padding-left: 50px;
+    }
+}
