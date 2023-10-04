@@ -365,4 +365,11 @@ ul {
 }
 .card h3 {
   white-space: nowrap;
+}
+
+.solution {
+  padding-block: 120px 100px;
+}
+.solution__content {
+  padding-left: 50px;
 }/*# sourceMappingURL=style.css.map */

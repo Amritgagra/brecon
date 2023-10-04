@@ -223,3 +223,10 @@ ul {
         white-space: nowrap;
     }
 }
+
+.solution {
+    padding-block:120px 100px;
+    &__content {
+        padding-left: 50px;
+    }
+}
