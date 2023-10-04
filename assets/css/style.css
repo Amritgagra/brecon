@@ -372,4 +372,11 @@ ul {
 }
 .solution__content {
   padding-left: 50px;
+}
+
+.application {
+  padding-block: 170px;
+}
+.application__content {
+  padding-left: 50px;
 }/*# sourceMappingURL=style.css.map */
