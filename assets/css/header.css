@@ -88,7 +88,7 @@
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
-.header .nav-link:hover::before, .header .nav-link:focus::before {
+.header .nav-link:hover::before {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
@@ -160,7 +160,7 @@
   }
 }
 .header .offcanvas {
-  background: #161616;
+  background: #272727;
   width: 100%;
 }
 @media screen and (max-width: 1200px) {

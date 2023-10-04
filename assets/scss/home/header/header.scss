@@ -76,8 +76,7 @@
                
             }
 
-            &:hover::before,
-            &:focus::before {
+            &:hover::before  {
                opacity: 1;
                transform: translateY(0px);
             }
@@ -187,3 +186,5 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
  } 
+
+ 

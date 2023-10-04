@@ -80,6 +80,9 @@ ul {
 .text__light {
     color: $clr-light !important;
 }
+.text__dark {
+    color: $clr-dark !important;
+}
 
 .min-h-inherit {
     min-height: inherit;
@@ -137,7 +140,7 @@ ul {
         padding-bottom: 174px;
     }
     &-md {
-        max-width: 685px;
+        max-width:570px;
     }
 }
 
@@ -204,5 +207,19 @@ ul {
     padding-left: 144px;
     @include mq(lg) {
         padding-left: 50px;
+    }
+}
+
+.shadow-md {
+    box-shadow: 0 2px 15px rgba($color: #000000, $alpha: .4);
+}
+
+.card {
+    max-width: 344px;
+    padding: 90px 88px 80px !important;
+    text-align: center;
+    height: 100%;
+    h3 {
+        white-space: nowrap;
     }
 }

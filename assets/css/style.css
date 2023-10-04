@@ -223,6 +223,10 @@ ul {
   color: #F2F2F2 !important;
 }
 
+.text__dark {
+  color: #272727 !important;
+}
+
 .min-h-inherit {
   min-height: inherit;
 }
@@ -285,7 +289,7 @@ ul {
   padding-bottom: 174px;
 }
 .section__content-md {
-  max-width: 685px;
+  max-width: 570px;
 }
 
 .social-sidebar {
@@ -346,4 +350,19 @@ ul {
   .know__content {
     padding-left: 50px;
   }
+}
+
+.shadow-md {
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  max-width: 344px;
+  padding: 90px 88px 80px !important;
+  text-align: center;
+  height: 100%;
+}
+.card h3 {
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */
