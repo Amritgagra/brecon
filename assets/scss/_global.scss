@@ -143,3 +143,51 @@ ul {
         max-width: 685px;
     }
 }
+
+
+.social {
+    &-sidebar {
+        height: auto;
+        position: fixed;
+        top: 35vh;
+        padding: 10px;
+        padding-right: 0;
+        right: 0;
+        z-index: 2;
+        a {
+            display: block;
+            background: $clr-accent-dark;
+            padding: 46px 10px 46px 13px;
+        }
+    }
+    &-icon  {
+       
+        position: relative;
+        &:first-child::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right:10%;
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            height: 1px;
+            background: $clr-accent;
+        }
+    }
+}
+.mail-icon {
+    &:hover svg path,
+    &:focus  svg path
+    {
+        stroke: #E3B838;
+    }
+}
+.phone-icon {
+    &:hover svg path,
+    &:focus  svg path
+    {
+        fill: #E3B838;
+    }
+}

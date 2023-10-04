@@ -85,42 +85,33 @@ a, button {
 }
 
 .btn__outline-accent {
-  border: 2px solid #DAFF00;
-  color: #fff;
+  border: 1px solid #21578A;
+  color: #21578A !important;
   background: transparent;
-  border-radius: 5px;
-  padding: 8px 30px;
+  border-radius: 8px;
+  padding: 4px 25px !important;
   font-weight: 500 !important;
   min-width: 188px;
 }
 .btn__outline-accent:hover, .btn__outline-accent:focus {
-  background: #DAFF00 !important;
-  color: #000 !important;
-  border: 2px solid #DAFF00 !important;
+  background: #B3C8E6 !important;
+  color: #21578A !important;
+  border: 1px solid #B3C8E6 !important;
 }
 
-.btn-arrow {
-  color: #F2F2F2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
+.btn__outline-light {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  border-radius: 8px;
+  padding: 4px 25px;
+  font-weight: 500 !important;
+  min-width: 188px;
 }
-.btn-arrow svg {
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.btn-arrow:hover, .btn-arrow:focus {
-  color: #F2F2F2;
-}
-.btn-arrow:hover svg, .btn-arrow:focus svg {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+.btn__outline-light:hover, .btn__outline-light:focus {
+  background: #B3C8E6 !important;
+  color: #002F5F !important;
+  border: 1px solid #B3C8E6 !important;
 }
 
 @media screen and (min-width: 1700px) {
@@ -165,7 +156,7 @@ ul {
 }
 
 .text-accent {
-  color: #DAFF00;
+  color: #21578A;
 }
 
 .object-cover {
@@ -210,11 +201,11 @@ ul {
 }
 
 .bg__accent {
-  background: #DAFF00;
+  background: #21578A;
 }
 
 .text__accent {
-  color: #DAFF00 !important;
+  color: #21578A !important;
 }
 
 .text__light {
@@ -284,4 +275,42 @@ ul {
 }
 .section__content-md {
   max-width: 685px;
+}
+
+.social-sidebar {
+  height: auto;
+  position: fixed;
+  top: 35vh;
+  padding: 10px;
+  padding-right: 0;
+  right: 0;
+  z-index: 2;
+}
+.social-sidebar a {
+  display: block;
+  background: #002F5F;
+  padding: 46px 10px 46px 13px;
+}
+.social-icon {
+  position: relative;
+}
+.social-icon:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  height: 1px;
+  background: #21578A;
+}
+
+.mail-icon:hover svg path, .mail-icon:focus svg path {
+  stroke: #E3B838;
+}
+
+.phone-icon:hover svg path, .phone-icon:focus svg path {
+  fill: #E3B838;
 }/*# sourceMappingURL=style.css.map */

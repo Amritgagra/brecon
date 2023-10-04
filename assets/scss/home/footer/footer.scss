@@ -3,31 +3,40 @@
 
 
 .footer {
+    padding-top: 164px;
       .copyright__text {
         font-size: 16px;
         line-height: 21px;
         color: #272727;
     }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+     }
 
     &__list {
         .list__link {
-            color: $clr-light;
+            text-transform: capitalize;
+            color: $clr-dark;
             line-height: 1;
+            &:hover,
+            &:focus {
+                color: $clr-accent;
+            }
         }
     }
-
-    .footer-content {
-        padding-block: 106px 84px;
-        border-block:2px solid #6E6E6E ;
-        @include mq(lg){
-            padding-block: 50px;
-         }
+    .copyright-wrapper {
+        border-top: 1px solid #E0E1DD;
+        margin-top: 60px;
     }
     .copyright-section {
-        padding-block:23px 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @include mq(lg){
             padding-block: 20px;
          }
+        
     }
     &__title {
         line-height: 40px;
@@ -38,51 +47,26 @@
             line-height: 80px;
          }
     }
-    .list--social {
-        svg {
-            fill: $clr-dark;
-            width: 1rem;
-            height: 1rem;
-        }
-        .list__item {
-            background: $clr-light;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all .3s ease-in-out;
-            &:hover,
-            &:focus {
-                background: $clr-accent;
-            }
-        }        
-    }
     .list--hover {
         .list__link {
             position: relative;
-            transition: padding-left .3s ease-out;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 22px;
-                height: 1px;
-                background: $clr-accent;
-                left: 0;
-                top: 56%;
-                opacity: 0;
-                -webkit-transition: opactiy .1s ease-out;
-                transition: opactiy .1s ease-out;
-            }
+            transition: color .3s ease-out;
             &:hover,
             &:focus {
-                padding-left: 30px;
+                color: $clr-accent;
             }
-            &:hover::before,
-            &:focus::before {
-                opacity: 1;
-            }
+        }
+    }
+    .back-to-top {
+        width: 44px;
+        height: 44px;
+        background: $clr-accent-dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover  svg path ,
+        &:focus  svg path  {
+            stroke: #E3B838;
         }
     }
 }

@@ -1,9 +1,6 @@
 .header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 99;
+  background: #fff;
+  padding-block: 3px;
 }
 @media screen and (max-width: 992px) {
   .header {
@@ -11,12 +8,7 @@
   }
 }
 .header-logo {
-  height: 160px;
-}
-@media screen and (max-width: 1800px) {
-  .header-logo {
-    height: 140px;
-  }
+  max-width: 235px;
 }
 @media screen and (max-width: 992px) {
   .header-logo {
@@ -39,13 +31,12 @@
     max-width: 40px;
   }
 }
-.header-logo-text {
-  color: rgba(242, 242, 242, 0.4392156863);
-  line-height: 20px;
-  font-family: "Urbanist", sans-serif;
-}
 .header .navbar {
   padding: 0;
+}
+.header .navbar .btn__outline-accent {
+  padding: 6px 25px !important;
+  min-width: 134px;
 }
 @media screen and (max-width: 992px) {
   .header .navbar-nav {
@@ -55,23 +46,9 @@
   }
 }
 .header.active {
-  position: fixed;
-  background: #161616;
   padding-block: 20px;
   -webkit-animation: fadeIn 0.3s ease-in-out both;
           animation: fadeIn 0.3s ease-in-out both;
-}
-.header.active .header-logo--scroll {
-  display: block;
-}
-.header.active .header-logo {
-  display: none;
-}
-.header.active .header-logo-text {
-  display: none !important;
-}
-.header.active .header-logo--mobile {
-  display: none;
 }
 .header .nav-item {
   padding: 0 22px;
@@ -84,35 +61,40 @@
 .header .nav-link {
   padding: 0 !important;
   position: relative;
-  color: #F2F2F2;
-  font-weight: 500;
+  color: #000;
+  font-size: 19px !important;
+  font-weight: 400;
+  line-height: 22px;
 }
 @media screen and (max-width: 1200px) {
   .header .nav-link {
-    color: #F2F2F2;
+    color: #000;
     margin-bottom: 30px;
   }
 }
-.header .nav-link:before {
+.header .nav-link:not(.german-logo-link, .btn)::before {
   content: "";
   position: absolute;
   bottom: 0px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 1px;
-  width: 22px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
   display: block;
-  background: #DAFF00;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  background: #21578A;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 .header .nav-link:hover::before, .header .nav-link:focus::before {
   opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 .header .nav-link:hover, .header .nav-link:focus {
-  color: #F2F2F2;
+  color: #21578A;
 }
 .header .nav-link.active::before {
   opacity: 1;

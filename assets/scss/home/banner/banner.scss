@@ -1,10 +1,12 @@
 @import '../../variables';
 @import '../../mixins';
 .banner{
-    min-height: 1094px;
+    min-height: 830px;
     background-size: cover;
     position: relative;
     z-index: 2;
+    margin-top: 97  px;
+    background: url(../images/brecon-bild.png) no-repeat center/cover;
     &::after {
         content: '';
         position: absolute;
@@ -15,26 +17,8 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.75 );
-        background:linear-gradient(to bottom , rgba(0, 0, 0, 0.8) 0%, rgba(13, 13, 13, 0.43) 37.25%, rgba(22, 22, 22,.8) 100%);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0.77) 32.24%, rgba(0, 0, 0, 0) 100%);
         background-size: cover;
-    }
-    &-video-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        video {
-            display: block;
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-        }
     }
     &__content {
         position: relative;
@@ -42,11 +26,5 @@
     }
     @include mq(lg) {
         min-height: 100vh;
-    }
-    .scroll-container {
-        margin-bottom: 80px;
-        position: relative;
-        z-index: 2;
-        transform: translateY(-60px);
     }
 }

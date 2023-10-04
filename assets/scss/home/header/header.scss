@@ -2,19 +2,13 @@
 @import "../../mixins";
 
 .header{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 99;
+    background: $clr-white;
+    padding-block:3px;
         @include mq(lg) {
           padding-block:25px;
          }
         &-logo  {
-            height:160px;  
-            @include mq(xxxl) {
-             height: 140px;
-            }
+            max-width: 235px;
             @include mq(lg) {
                display: none;
             }
@@ -31,13 +25,12 @@
                 max-width:40px;
              }
         }
-        &-logo-text  {
-          color: #F2F2F270; 
-          line-height: 20px;
-          font-family: 'Urbanist', sans-serif;
-        }
         .navbar {
             padding: 0;
+            .btn__outline-accent {
+                padding: 6px 25px !important;
+                min-width: 134px;
+            }
         }
         .navbar-nav {
             @include mq(lg){
@@ -45,22 +38,8 @@
              }
         }
         &.active {
-            position: fixed;
-            background:$clr-dark;
             padding-block:20px;
             animation: fadeIn .3s ease-in-out both;
-            .header-logo--scroll {
-                display: block;
-            }
-            .header-logo {
-                display: none;
-            }
-            .header-logo-text {
-                display: none !important;
-            }
-            .header-logo--mobile {
-                display: none;
-            }
         }
         .nav-item {
             padding: 0 22px;
@@ -71,36 +50,40 @@
         .nav-link {
             padding: 0 !important;
             position: relative;
-            color: $clr-light;
-            font-weight: 500;
+            color: $clr-black;
+            font-size: 19px !important;
+            font-weight: 400;
+            line-height: 22px;
 
             @include mq(xl) {
-                color: $clr-light; 
+                color: $clr-black; 
                 margin-bottom: 30px;
             }
-            &:before {
+            &:not(.german-logo-link , .btn)::before {
                 content: '';
                 position: absolute;
                 bottom: 0px;
-                left: 50%;
-                transform: translateX(-50%);
-                height: 1px;
-                width:22px;
+                left: 0;
+                right: 0;
+                height: 2px;
+                width:100%;
                 display: block;
                 background: $clr-accent;
-                transition: opacity .3s ease-in-out;
+                transition: all .3s ease-in-out;
                 opacity: 0;
+                transform: translateY(2px);
                
             }
 
             &:hover::before,
             &:focus::before {
                opacity: 1;
+               transform: translateY(0px);
             }
 
             &:hover,
             &:focus {
-                color: $clr-light;
+                color: $clr-accent;
             }
 
             &.active::before {
