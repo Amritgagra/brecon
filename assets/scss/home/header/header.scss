@@ -46,6 +46,56 @@
             @include mq(xxxl){
                 padding: 0 15px;
               }
+              &.dropdown:not(.lang-item) {
+                position: initial;
+                .nav-link:not(.lang-link) {
+                    position: initial;
+                }
+              }
+              
+              .dropdown-menu {
+                left: 0;
+                right: 0;
+                border-radius: 0;
+                padding-block: 90px;
+                margin-top: 16px;
+                border: 0;
+                p {
+                    font-size: 19px;
+                    line-height: 26px;
+                    font-family: 'Berthold-Akzidenz-Grotesk-Medium';
+                }
+              }
+              .dropdown-item {
+                padding-left: 0;
+                margin-left:-4px;
+                font-size: 19px;
+                line-height: 22px;
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 10px;
+                    display: inline-block;
+                    background: url(../images/chevron-right.svg) no-repeat center;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+
+                &:hover,
+                &:focus
+                 {
+                    background: none;
+                }
+              }
+        }
+
+        .lang-item {
+            .dropdown-menu {
+                min-width: initial;
+            }
+            .dropdown-item::before {
+                display: none;
+            }
         }
         .nav-link {
             padding: 0 !important;
@@ -62,7 +112,7 @@
            
             &:not(.german-logo-link , .btn, .lang-link)::before {
                 content: '';
-                position: absolute;
+                position: static;
                 bottom: 0px;
                 left: 0;
                 right: 0;
@@ -72,13 +122,13 @@
                 background: $clr-accent;
                 transition: all .3s ease-in-out;
                 opacity: 0;
-                transform: translateY(2px);
+                transform: translateY(26px);
                
             }
 
             &:hover::before  {
                opacity: 1;
-               transform: translateY(0px);
+               transform: translateY(24px);
             }
 
             &:hover,
@@ -187,4 +237,3 @@
     100% {opacity: 1;}
  } 
 
- 
