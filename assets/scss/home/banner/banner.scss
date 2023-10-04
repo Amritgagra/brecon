@@ -5,7 +5,7 @@
     background-size: cover;
     position: relative;
     z-index: 2;
-    margin-top: 97  px;
+    margin-top: 97px;
     background: url(../images/brecon-bild.png) no-repeat center/cover;
     &::after {
         content: '';
@@ -26,5 +26,41 @@
     }
     @include mq(lg) {
         min-height: 100vh;
+    }
+    .topbar {
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        & > .bar {
+            height: 13px;
+            flex-basis: 100%;
+        }
+        .color {
+            &-blue {
+                background:#21578A ;
+                &--light{
+                    background:#B3C8E6 ;
+                }
+                &--dark{
+                    background:#002F5F ;
+                }
+            }
+            &-yellow {
+                background:#E3B838 ;
+            }
+            &-red {
+                background:#D52B21 ;
+            }
+            &-gray {
+                background:#9EA1A8 ;
+                &--dark {
+                    background:#3F3D3E ;
+                }
+            }
+        }
+
     }
 }

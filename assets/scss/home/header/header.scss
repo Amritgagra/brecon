@@ -59,7 +59,8 @@
                 color: $clr-black; 
                 margin-bottom: 30px;
             }
-            &:not(.german-logo-link , .btn)::before {
+           
+            &:not(.german-logo-link , .btn, .lang-link)::before {
                 content: '';
                 position: absolute;
                 bottom: 0px;
@@ -90,7 +91,24 @@
                opacity: 1;
             }
         }
+        .dropdown-toggle {
+            &::after {
+                background: url(../images/chevron-icon.svg) no-repeat center;
+                width: 15px;
+                height: 7px;
+                border: 0;
+                vertical-align: 0.1em;
+                margin-left: 0.4em;
+            }
+        }
 
+        .lang-link {
+            color: $clr-accent;
+            &:hover,
+            &:focus {
+                color: #D52B21;
+            }
+        }
        
         .offcanvas-body {
             @include mq(xl) {
