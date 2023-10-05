@@ -1,0 +1,98 @@
+@import "../../variables";
+@import "../../mixins";
+.contact {
+    margin-top: 97px;
+    padding-block: 155px 243px;   
+    background: $clr-accent-dark;
+    color: $clr-white;
+    .form__title {
+        font-size: 30px;
+        line-height: 45px;
+        font-family: 'Work Sans', sans-serif;
+        color: $clr-white;
+    }
+    &__link {
+        font-size:18px ;
+        line-height: 21px;
+        a {
+            color: $clr-white;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    }
+    &__subtitle {
+        color: #B3C8E6;
+        font-size:18px ;
+        line-height: 21px;
+    }
+    address {
+        p {
+            font-size:18px ;
+            line-height: 28px;
+        }
+    }
+    &__form {
+        max-width: 780px;
+       
+        .form-control {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #BFBBB2;
+            border-radius: 0;
+            color: $clr-light;
+            font-size: 22px;
+            line-height: 40px;
+            padding-left: 0;
+           
+            &::placeholder {
+                color: $clr-light;
+                font-size: 22px;
+                line-height: 40px;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        label {
+            color:#B3C8E6;
+            font-size: 18px;
+        }
+        textarea {
+            resize: none;
+        }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
+    }
+    input[data-autocompleted] {
+        background-color: transparent !important;
+    }
+
+    .radio {
+        width: 21px;
+        height: 21px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .form-check-label  {
+        color: #E0E1DD;
+    }
+    .border__top {
+        border-top: 1px solid #BFBBB2;
+    }
+    &__copyright {
+        p {
+            font-size: 18px;
+        }
+        padding-block:10px;
+        border-top: 1px solid $clr-white !important; 
+        .list__link {
+            color: $clr-white !important;
+            &:hover {
+                color: $clr-white !important;
+            }
+        }
+    }
+}
+

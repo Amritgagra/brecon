@@ -1,0 +1,112 @@
+.contact {
+  margin-top: 97px;
+  padding-block: 155px 243px;
+  background: #002F5F;
+  color: #fff;
+}
+.contact .form__title {
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+.contact__link {
+  font-size: 18px;
+  line-height: 21px;
+}
+.contact__link a {
+  color: #fff;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.contact__subtitle {
+  color: #B3C8E6;
+  font-size: 18px;
+  line-height: 21px;
+}
+.contact address p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.contact__form {
+  max-width: 780px;
+}
+.contact__form .form-control {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #BFBBB2;
+  border-radius: 0;
+  color: #F2F2F2;
+  font-size: 22px;
+  line-height: 40px;
+  padding-left: 0;
+}
+.contact__form .form-control::-webkit-input-placeholder {
+  color: #F2F2F2;
+  font-size: 22px;
+  line-height: 40px;
+}
+.contact__form .form-control::-moz-placeholder {
+  color: #F2F2F2;
+  font-size: 22px;
+  line-height: 40px;
+}
+.contact__form .form-control:-ms-input-placeholder {
+  color: #F2F2F2;
+  font-size: 22px;
+  line-height: 40px;
+}
+.contact__form .form-control::-ms-input-placeholder {
+  color: #F2F2F2;
+  font-size: 22px;
+  line-height: 40px;
+}
+.contact__form .form-control::placeholder {
+  color: #F2F2F2;
+  font-size: 22px;
+  line-height: 40px;
+}
+.contact__form .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.contact__form label {
+  color: #B3C8E6;
+  font-size: 18px;
+}
+.contact__form textarea {
+  resize: none;
+}
+.contact input:-webkit-autofill,
+.contact input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.contact input[data-autocompleted] {
+  background-color: transparent !important;
+}
+.contact .radio {
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.contact .form-check-label {
+  color: #E0E1DD;
+}
+.contact .border__top {
+  border-top: 1px solid #BFBBB2;
+}
+.contact__copyright {
+  padding-block: 10px;
+  border-top: 1px solid #fff !important;
+}
+.contact__copyright p {
+  font-size: 18px;
+}
+.contact__copyright .list__link {
+  color: #fff !important;
+}
+.contact__copyright .list__link:hover {
+  color: #fff !important;
+}/*# sourceMappingURL=contact.css.map */

@@ -29,15 +29,7 @@
             }
         }
     }
-    .copyright-wrapper {
-        border-top: 1px solid #E0E1DD;
-        margin-top: 60px;
-    }
-    .copyright-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;       
-    }
+   
     &__title {
         line-height: 40px;
         margin-bottom: 30px;
@@ -69,4 +61,17 @@
             stroke: #E3B838;
         }
     }
+}
+
+.copyright-wrapper {
+    border-top: 1px solid #E0E1DD;
+    margin-top: 60px;
+}
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+    @include mq(sm){
+     flex-direction: column-reverse;
+     } 
 }

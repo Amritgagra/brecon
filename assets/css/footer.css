@@ -22,21 +22,6 @@
 .footer__list .list__link:hover, .footer__list .list__link:focus {
   color: #21578A;
 }
-.footer .copyright-wrapper {
-  border-top: 1px solid #E0E1DD;
-  margin-top: 60px;
-}
-.footer .copyright-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .footer__title {
   line-height: 40px;
   margin-bottom: 30px;
@@ -72,4 +57,29 @@
 }
 .footer .back-to-top:hover svg path, .footer .back-to-top:focus svg path {
   stroke: #E3B838;
+}
+
+.copyright-wrapper {
+  border-top: 1px solid #E0E1DD;
+  margin-top: 60px;
+}
+
+.copyright-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .copyright-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=footer.css.map */
