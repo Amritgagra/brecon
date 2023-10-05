@@ -110,6 +110,22 @@ ul {
     }
 }
 
+.prev-link {
+    color: #747678;
+    &::before {
+        content: '';
+        width: 15px;
+        height: 10px;
+        display: inline-block;
+        background: url(../images/chevron-left.svg) no-repeat center;
+        vertical-align: middle;
+        transform: rotate(-180deg);
+    }
+    &:hover {
+        color: #747678;
+    }
+}
+
 
 
 .list--arrow {
@@ -196,7 +212,9 @@ ul {
 .bg__gradient {
     background: linear-gradient(158deg, #b3c8e6 0%, #e0e1dd 100%);
 }
-
+.bg__blue--light {
+    background: #B3C8E6;
+}
 .know__content {
     padding-left: 144px;
     @include mq(lg) {
@@ -422,5 +440,15 @@ ul {
         &:hover {
             color: $clr-accent;
         }
+    }
+}
+
+.application__products {
+   padding-block:236px 174px;
+   @include mq(xxl) {
+    padding-block:100px;
+}
+    h3 {
+        color: $clr-accent;
     }
 }
