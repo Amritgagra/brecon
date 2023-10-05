@@ -13,18 +13,7 @@
                 max-width: 160px;
                }
         }
-        &-logo--mobile {
-            display: none;
-            @include mq(lg) {
-                display: block;
-             }
-        }
-        &-logo--scroll {
-            display: none;
-            @include mq(lg) {
-                max-width:40px;
-             }
-        }
+       
         .navbar {
             padding: 0;
             .btn__outline-accent {
@@ -42,7 +31,7 @@
             animation: fadeIn .3s ease-in-out both;
         }
         .nav-item {
-            padding: 0 22px;
+            padding: 0 16px;
             @include mq(xxxl){
                 padding: 0 10px;
               }

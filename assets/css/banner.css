@@ -28,40 +28,4 @@
   .banner {
     min-height: 100vh;
   }
-}
-.banner .topbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.banner .topbar > .bar {
-  height: 13px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-.banner .topbar .color-blue {
-  background: #21578A;
-}
-.banner .topbar .color-blue--light {
-  background: #B3C8E6;
-}
-.banner .topbar .color-blue--dark {
-  background: #002F5F;
-}
-.banner .topbar .color-yellow {
-  background: #E3B838;
-}
-.banner .topbar .color-red {
-  background: #D52B21;
-}
-.banner .topbar .color-gray {
-  background: #9EA1A8;
-}
-.banner .topbar .color-gray--dark {
-  background: #3F3D3E;
 }/*# sourceMappingURL=banner.css.map */

@@ -15,12 +15,12 @@ $(document).ready(function() {
   // }
   $('.nav-link:not(.lang-link)').on('click',function(){
     if($(this).hasClass('show')){
-      $('.banner .topbar').addClass('position-fixed');
-      $('.banner .topbar').css('top',`${$('.header').outerHeight()}px`);
+      $('.topbar').addClass('position-fixed');
+      $('.topbar').css('top',`${$('.header').outerHeight()}px`);
     }
     else {
-      $('.banner .topbar').removeClass('position-fixed');
-      $('.banner .topbar').css('top','0px');
+      $('.topbar').removeClass('position-fixed');
+      $('.topbar').css('top','0px');
     }
   })
 });

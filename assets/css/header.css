@@ -15,22 +15,6 @@
     max-width: 160px;
   }
 }
-.header-logo--mobile {
-  display: none;
-}
-@media screen and (max-width: 992px) {
-  .header-logo--mobile {
-    display: block;
-  }
-}
-.header-logo--scroll {
-  display: none;
-}
-@media screen and (max-width: 992px) {
-  .header-logo--scroll {
-    max-width: 40px;
-  }
-}
 .header .navbar {
   padding: 0;
 }
@@ -51,7 +35,7 @@
           animation: fadeIn 0.3s ease-in-out both;
 }
 .header .nav-item {
-  padding: 0 22px;
+  padding: 0 16px;
 }
 @media screen and (max-width: 1800px) {
   .header .nav-item {

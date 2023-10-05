@@ -327,3 +327,80 @@ ul {
         padding-left: 0px;
     }
 }
+
+.topbar {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    & > .bar {
+        height: 13px;
+        flex-basis: 100%;
+    }
+    .color {
+        &-blue {
+            background:#21578A ;
+            &--light{
+                background:#B3C8E6 ;
+            }
+            &--dark{
+                background:#002F5F ;
+            }
+        }
+        &-yellow {
+            background:#E3B838 ;
+        }
+        &-red {
+            background:#D52B21 ;
+        }
+        &-gray {
+            background:#9EA1A8 ;
+            &--dark {
+                background:#3F3D3E ;
+            }
+        }
+    }
+}
+
+
+.products {
+    margin-top: 97px;
+    padding-block: 155px 243px;
+    &-cards {
+        padding-bottom: 160px;
+        h3 {
+            margin-bottom: 0;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.list--arrow {
+    margin-bottom: 0;
+    .list__item {
+        padding-left: 0;
+    }
+    .list__link{
+        display: flex;
+        align-items: baseline;
+        color: $clr-black;
+        font-size: 25px;
+        line-height: 29px;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 10px;
+            display: inline-block;
+            background: url(../images/chevron-right.svg) no-repeat center;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        &:hover {
+            color: $clr-accent;
+        }
+    }
+}
