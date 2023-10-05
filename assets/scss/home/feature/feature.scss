@@ -2,6 +2,9 @@
 @import '../../mixins';
 .feature {
     padding-block:160px;
+    @include mq(md) {
+        padding-block:80px;
+    }
     .nav-pills {
         max-width: 760px;
         .nav-link {
@@ -21,6 +24,12 @@
                 margin-bottom: 20px;
                 font-size: 26px !important;
                 line-height: 35px;
+            }
+            @include mq(sm) {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                font-size: 22px !important;
+                line-height: 30px;
             }
               span {
                 text-align: left;

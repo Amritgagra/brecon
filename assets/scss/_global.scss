@@ -19,7 +19,7 @@ ul {
 .block-margin{
    margin-block: 100px;
    @include mq(lg){
-       margin-block: 100px;
+       margin-block: 80px;
     }
 }
 .block-padding{
@@ -159,7 +159,17 @@ ul {
 .know__content {
     padding-left: 144px;
     @include mq(lg) {
-        padding-left: 0px;
+        padding: 40px 20px;
+    }
+}
+.know {
+    .left {
+        img {
+            @include mq(sm) {
+               min-height: 250px;
+               object-fit: cover;
+            } 
+        }
     }
 }
 
@@ -182,6 +192,9 @@ ul {
 
 .solution {
     padding-block:120px 100px;
+    @include mq(lg) {
+        padding-block:80px;
+    }
     &__content {
         padding-left: 144px;
         @include mq(lg) {
@@ -192,6 +205,9 @@ ul {
 
 .application {
     padding-block:170px;
+    @include mq(lg) {
+        padding-block:80px;
+    }
 &__content {
     padding-left: 50px;
     @include mq(lg) {
@@ -324,7 +340,7 @@ ul {
 }
 
 
-.products {
+.products-info {
     margin-top: 97px;
     padding-block: 155px 243px;
     &-cards {

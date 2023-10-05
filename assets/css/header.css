@@ -56,6 +56,12 @@
   margin-top: 16px;
   border: 0;
 }
+@media screen and (max-width: 1200px) {
+  .header .nav-item .dropdown-menu {
+    padding-block: 10px;
+    margin-top: 0px;
+  }
+}
 .header .nav-item .dropdown-menu p {
   font-size: 19px;
   line-height: 26px;
@@ -221,6 +227,15 @@
   }
   .header .offcanvas-header .header-logo--mobile {
     display: block !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

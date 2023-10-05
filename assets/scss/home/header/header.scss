@@ -49,6 +49,10 @@
                 padding-block: 90px;
                 margin-top: 16px;
                 border: 0;
+                @include mq(xl){ 
+                    padding-block: 10px; 
+                    margin-top: 0px;
+                }
                 p {
                     font-size: 19px;
                     line-height: 26px;
@@ -218,6 +222,13 @@
         .header-logo--mobile {
             display: block !important;
         }
+    }
+}
+.col {
+    @include mq(xl) {
+        flex:0 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 }
