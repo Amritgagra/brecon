@@ -6,9 +6,9 @@
 }
 .feature .nav-pills .nav-link {
   background: transparent;
-  font-size: 35px !important;
+  font-size: 32px !important;
   line-height: 47px;
-  font-family: "Berthold-Akzidenz-Grotesk-Medium";
+  font-family: "Work Sans", sans-serif;
   color: #fff;
   padding-inline: 0 !important;
   border-bottom: 1px solid #B3C8E6;
@@ -18,6 +18,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 992px) {
+  .feature .nav-pills .nav-link {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 26px !important;
+    line-height: 35px;
+  }
+}
+.feature .nav-pills .nav-link span {
+  text-align: left;
 }
 .feature .nav-pills .nav-link:last-child {
   border: 0;

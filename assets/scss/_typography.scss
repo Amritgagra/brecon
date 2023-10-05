@@ -1,14 +1,15 @@
 @import './variables';
 @import './mixins';
-@font-face {
-    font-family: 'Berthold-Akzidenz-Grotesk-Medium';
-    src: 
-    url('font/Berthold-Akzidenz-Grotesk-Medium.woff2'),
-    url('font/Berthold-Akzidenz-Grotesk-Medium.otf');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+// @font-face {
+//     font-family: 'Berthold-Akzidenz-Grotesk-Medium';
+//     src: 
+//     url('font/Berthold-Akzidenz-Grotesk-Medium.woff2'),
+//     url('font/Berthold-Akzidenz-Grotesk-Medium.otf');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
 @font-face {
     font-family: 'Arial';
@@ -16,8 +17,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-
+}  
 
 body{
     font-family: 'Arial';
@@ -28,11 +28,11 @@ body{
 
 
 h1 {
-    font-size: 50px;
-    line-height: 67px;
-    font-weight: 500;
+    font-size: 46px;
+    line-height: 65px;
+    font-weight: 400;
     margin-bottom: 20px;
-    font-family: 'Berthold-Akzidenz-Grotesk-Medium';
+    font-family: 'Work Sans', sans-serif;
     @include mq(md){
         font-size: 35px;
         line-height: 40px;
@@ -44,11 +44,12 @@ h1 {
 }
 
 h2{
-    font-size: 50px;
-    line-height: 67px;
-    font-weight: 500;
+    font-size: 46px;
+    line-height: 65px;
+    font-weight: 400;
     margin-bottom: 20px;
-    font-family: 'Berthold-Akzidenz-Grotesk-Medium';
+    letter-spacing: -2px;
+    font-family: 'Work Sans', sans-serif;
     @include mq(md){
         font-size: 35px;
         line-height: 40px;

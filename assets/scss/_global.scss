@@ -29,7 +29,7 @@ ul {
     }
 }
 .block-padding--xl{
-   padding-block: 250px;
+   padding-block: 170px;
    @include mq(lg){
        padding-block: 100px;
     }
@@ -69,7 +69,7 @@ ul {
 }
 
 .bg__light {
-    background: $clr-light;
+    background:#E0E1DD;
 }
 .bg__accent {
     background: $clr-accent-dark;
@@ -132,13 +132,7 @@ ul {
 }
 
 .section__content {
-    max-width: 823px;
-    &-wrapper {
-        max-width: 1470px;
-        margin-left: auto;
-        padding-top: 341px;
-        padding-bottom: 174px;
-    }
+    max-width: 761px;
     &-md {
         max-width:570px;
     }
@@ -245,4 +239,91 @@ ul {
         padding-left: 0px;
     }
 }
+}
+
+.know-center {
+    position: relative;
+    padding-block:113px 100px ;
+    overflow: hidden;
+  .nav-pills {
+    position: relative;
+    z-index: 2;
+    .nav-link {
+        color: $clr-accent;
+        border-color: $clr-accent;
+        border-width: 2px;
+        padding-right: 5px;
+        &.active {
+            color: #D52B21;
+        }
+    }
+  }
+  
+    .accordion {
+       position: relative;
+        &-item {
+            border-bottom:2px solid #E0E1DD !important;
+        }
+        &-body {
+            padding-top: 0;
+        }
+        &-button {
+            font-size: 25px !important;
+            line-height: 33px;
+            font-family: 'Work Sans', sans-serif;
+            &::after {
+                background-image: url(../images/plus-icon.svg);
+                background-position: center;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+            &:not(.collapsed) {
+                box-shadow: none;
+                &::after {
+                    background-image: url(../images/minus-icon.svg);   
+                }
+            }
+        }
+    }
+
+    &::before  {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 34.80%;
+        height: 100%;
+        display: block;
+        background: #E0E1DD;
+        @include mq(xl) {
+          display: none;
+        }
+    }
+    .left {
+        position: relative;
+        &::before  {
+            @include mq(xl) {
+                content: "";
+                position: absolute;
+                left: -24px;
+                top: -3%;
+                right: -24px;
+                display: block;
+                background: #e0e1dd;
+                width: 107%;
+                height: 106%;
+            }
+        }
+    }
+}
+
+.tab-pane-content {
+    padding-left: 221px;
+    @include mq(xxxl) {
+        padding-left: 100px;
+    }
+    @include mq(lg) {
+        padding-left: 0px;
+    }
 }

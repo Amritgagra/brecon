@@ -6,9 +6,9 @@
         max-width: 760px;
         .nav-link {
             background: transparent;
-            font-size: 35px !important;
+            font-size: 32px !important;
             line-height: 47px;
-            font-family: 'Berthold-Akzidenz-Grotesk-Medium';
+            font-family: 'Work Sans', sans-serif;
             color: $clr-white;
             padding-inline:0 !important;
             border-bottom: 1px solid $clr-accent-light;
@@ -16,7 +16,15 @@
             padding-bottom: 40px;
             margin-bottom: 40px;
             display: flex;
-
+            @include mq(lg) {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                font-size: 26px !important;
+                line-height: 35px;
+            }
+              span {
+                text-align: left;
+              }
             &:last-child {
                 border: 0;
                 padding-bottom: 0;
@@ -27,4 +35,6 @@
             }
         }
     }
+
+   
 }

@@ -36,11 +36,7 @@
     .copyright-section {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        @include mq(lg){
-            padding-block: 20px;
-         }
-        
+        align-items: center;       
     }
     &__title {
         line-height: 40px;
