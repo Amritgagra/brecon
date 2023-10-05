@@ -13,8 +13,8 @@ $(document).ready(function() {
   // if($(window).width() < 993) {
   //   window.onscroll = function() {scrollFunction(0)};
   // }
-  $('.nav-link:not(.lang-link)').on('click',function(){
-    if($(this).hasClass('show')){
+  $(document).on('click',function(){
+    if($(".nav-link").hasClass('show')){
       $('.topbar').addClass('position-fixed');
       $('.topbar').css('top',`${$('.header').outerHeight()}px`);
     }

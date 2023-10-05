@@ -379,6 +379,26 @@ ul {
     }
 }
 
+.product{
+    &-detail {
+        margin-top: 97px;
+        padding-block: 155px 243px;   
+    }
+
+    &-info {
+        background: #B3C8E6;
+        padding-block: 47px;
+        text-align: center;
+        h3 {
+            color: $clr-accent;
+            line-height: 33px;
+        }
+        &__content{
+            max-width: 594px;
+            margin: 0 auto;
+        }
+    }
+}
 .list--arrow {
     margin-bottom: 0;
     .list__item {
