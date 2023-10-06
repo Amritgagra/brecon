@@ -2,7 +2,7 @@
 @import "../../mixins";
 .contact {
     margin-top: 97px;
-    padding-block: 155px 243px;   
+    padding-block: 122px;   
     background: $clr-accent-dark;
     color: $clr-white;
     .form__title {
@@ -42,7 +42,8 @@
             color: $clr-light;
             font-size: 22px;
             line-height: 40px;
-            padding-left: 0;
+            padding: 0;
+            padding-bottom: 6px;
            
             &::placeholder {
                 color: $clr-light;
@@ -93,6 +94,12 @@
                 color: $clr-white !important;
             }
         }
+    }
+    .btn {
+        max-width: 169px;
+        min-width: initial;
+        white-space: nowrap;
+        padding: 4px 15px;
     }
 }
 

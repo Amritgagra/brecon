@@ -350,6 +350,13 @@ ul {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .technology img,
+  .solution img {
+    width: 100%;
+  }
+}
+
 .solution {
   padding-block: 120px 100px;
 }
@@ -518,6 +525,11 @@ ul {
   margin-top: 97px;
   padding-block: 155px 243px;
 }
+@media screen and (max-width: 1400px) {
+  .products-info {
+    padding-block: 100px;
+  }
+}
 .products-info-cards {
   padding-bottom: 160px;
 }
@@ -531,6 +543,11 @@ ul {
 .product-detail {
   margin-top: 97px;
   padding-block: 155px 243px;
+}
+@media screen and (max-width: 1400px) {
+  .product-detail {
+    padding-block: 100px;
+  }
 }
 .product-info {
   background: #B3C8E6;
@@ -560,8 +577,9 @@ ul {
       -ms-flex-align: baseline;
           align-items: baseline;
   color: #000;
-  font-size: 25px;
+  font-size: 25px !important;
   line-height: 29px;
+  margin-bottom: 10px;
 }
 .list--arrow .list__link::before {
   content: "";

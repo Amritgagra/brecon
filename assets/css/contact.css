@@ -1,6 +1,6 @@
 .contact {
   margin-top: 97px;
-  padding-block: 155px 243px;
+  padding-block: 122px;
   background: #002F5F;
   color: #fff;
 }
@@ -39,7 +39,8 @@
   color: #F2F2F2;
   font-size: 22px;
   line-height: 40px;
-  padding-left: 0;
+  padding: 0;
+  padding-bottom: 6px;
 }
 .contact__form .form-control::-webkit-input-placeholder {
   color: #F2F2F2;
@@ -109,4 +110,10 @@
 }
 .contact__copyright .list__link:hover {
   color: #fff !important;
+}
+.contact .btn {
+  max-width: 169px;
+  min-width: initial;
+  white-space: nowrap;
+  padding: 4px 15px;
 }/*# sourceMappingURL=contact.css.map */

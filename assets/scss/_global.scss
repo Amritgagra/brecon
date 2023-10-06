@@ -190,6 +190,16 @@ ul {
     }
 }
 
+.technology ,
+.solution
+ {
+    img {
+        @include mq(lg) {
+           width: 100%;
+        }
+    }
+}
+
 .solution {
     padding-block:120px 100px;
     @include mq(lg) {
@@ -343,6 +353,9 @@ ul {
 .products-info {
     margin-top: 97px;
     padding-block: 155px 243px;
+    @include mq(xxl) {
+        padding-block:100px;
+    }
     &-cards {
         padding-bottom: 160px;
         h3 {
@@ -357,7 +370,10 @@ ul {
 .product{
     &-detail {
         margin-top: 97px;
-        padding-block: 155px 243px;   
+        padding-block: 155px 243px;  
+        @include mq(xxl) {
+            padding-block: 100px;
+        } 
     }
 
     &-info {
@@ -383,8 +399,9 @@ ul {
         display: flex;
         align-items: baseline;
         color: $clr-black;
-        font-size: 25px;
+        font-size: 25px !important;
         line-height: 29px;
+        margin-bottom: 10px;
         &::before {
             content: "";
             width: 15px;
